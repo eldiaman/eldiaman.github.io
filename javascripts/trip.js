@@ -82,7 +82,7 @@ var smoothTrail = function(c, cw, ch){
     if(this.radius <= 1){
       this.growRadius = true;
     }
-    if(this.radius >= 200){
+    if(this.radius >= 100){
       this.growRadius = false;
     }
 
@@ -188,11 +188,11 @@ var setupRAF = function(){
 /*=============================================================================*/
   if(isCanvasSupported){
     var c = document.createElement('canvas');
-    c.width = 400;
-    c.height = 400;
+    c.width = 250;
+    c.height = 250;
     var cw = c.width;
     var ch = c.height;
-    document.body.appendChild(c);
+    document.getElementsByTagName('header')[0].appendChild(c);
     var cl = new smoothTrail(c, cw, ch);
 
     setupRAF();

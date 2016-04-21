@@ -1,10 +1,8 @@
 canvas {
   display: block;
-  left: 50%;
-  margin: -200px 0 0 -200px;
-  position: absolute;
-  top: 50%;
+  position: static;
 }
+
 
 
 @font-face {
@@ -101,6 +99,20 @@ a {
   text-decoration:none;
 }
 
+a.disp {
+  color:#607F8A;
+}
+
+a:hover>img {
+  display: block;
+  float: right;
+}
+
+a>img {
+  display: none;
+}
+
+
 a:hover {
   color:#069;
 }
@@ -116,9 +128,20 @@ a:hover small {
   color:#777;
 }
 
+
 .wrapper {
   width:860px;
   margin:0 auto;
+}
+
+.right {
+  width: 400px;
+  margin:0 auto;
+  float: right;
+  padding-right: 100px;
+  margin-right: 10px;
+  text-align: justify;
+
 }
 
 blockquote {
@@ -236,7 +259,9 @@ section {
   width:500px;
   float:right;
   padding-bottom:50px;
+  text-align:justify;
 }
+
 
 small {
   font-size:11px;
