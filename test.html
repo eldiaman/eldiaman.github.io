@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-
+<html
 <meta charset="utf-8">
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
 <link rel="stylesheet" href="https://rawgit.com/tpreusse/radar-chart-d3/master/src/radar-chart.css">
 
+<head>
 <style>
 body {
   padding: 20px;
@@ -35,6 +36,8 @@ RadarChart.defaultConfig.radius = 3;
 RadarChart.defaultConfig.w = 400;
 RadarChart.defaultConfig.h = 400;
 </script>
+
+</head>
 
 <span></span>
 
@@ -73,10 +76,4 @@ svg.append('g').classed('single', 1).datum(data).call(chart);
 
 </script>
 
-<!--
-<h2>Simple single chart drawing</h2>
-<div class="chart-container"></div>
-<script>
-RadarChart.draw(".chart-container", data);
-</script>
--->
+</html>
