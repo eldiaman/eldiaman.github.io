@@ -20,12 +20,8 @@ body {
 .radar-chart.focus .area.focused {
   fill-opacity: 0.9;
 }
-.area.germany, .germany .circle {
-  fill: #FFD700;
-  stroke: none;
-}
-.area.argentina, .argentina .circle {
-  fill: #ADD8E6;
+.area.multint, .multint .circle {
+  fill: #009900;
   stroke: none;
 }
 </style>
@@ -45,7 +41,7 @@ RadarChart.defaultConfig.h = 400;
 <script>
 var data = [
   {
-    className: 'germany', // optional can be used for styling
+    className: 'multint', // optional can be used for styling
     axes: [
       {axis: "strength", value: 13}, 
       {axis: "intelligence", value: 6}, 
