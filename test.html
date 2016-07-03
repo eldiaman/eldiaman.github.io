@@ -1,68 +1,106 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+	<link rel="stylesheet" href="https://rawgit.com/tpreusse/radar-chart-d3/master/src/radar-chart.css">
+	<style>
+	body {
+	  padding: 20px;
+	}
+	</style>
+
+	<style>
+	.radar-chart .area {
+	  fill-opacity: 0.7;
+	}
+	.radar-chart.focus .area {
+	  fill-opacity: 0.3;
+	}
+	.radar-chart.focus .area.focused {
+	  fill-opacity: 0.9;
+	}
+	.area.multint, .multint .circle {
+	  fill: #009900;
+	  stroke: none;
+	}
+	</style>
+
+	<script src="http://d3js.org/d3.v3.js"></script>
+	<script src="https://rawgit.com/tpreusse/radar-chart-d3/master/src/radar-chart.js"></script>
+
+	<script>
+	RadarChart.defaultConfig.color = function() {};
+	RadarChart.defaultConfig.radius = 3;
+	RadarChart.defaultConfig.w = 500;
+	RadarChart.defaultConfig.h = 500;
+
+	var data = [
+	  {
+		className: 'multint', // optional can be used for styling
+		axes: [
+		  {axis: "strength", value: 13}, 
+		  {axis: "intelligence", value: 6}, 
+		  {axis: "charisma", value: 5},  
+		  {axis: "dexterity", value: 9},  
+		  {axis: "luck", value: 2}
+		]
+	  }
+	];
+	</script>
+    <title>Tsuki No Me by eldiaman</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="javascripts/multintel.js"></script>
+  </head>
+  <body onload="init();">
+    <div class="wrapper">
+      <header>
+        <h1>Tsuki No Me</h1>
+        <p class="view"><a href="http://eldiaman.github.io/index.html">Serious Games: Portfolio</a></p>
+        <p class="view"><a href="http://eldiaman.github.io/utopia.html">Serious Games: Utopia</a></p>
+        <p class="view"><a href="http://eldiaman.github.io/moodspace.html">Serious Games: Moodspace</a></p>
+        <p class="view"><a href="http://eldiaman.github.io/project.html">Serious Games: Project</a></p>
+      </header>
+      <section>
+        <h1> Results </h1>
+        <div>
+			<script>
+			var chart = RadarChart.chart();
+			var cfg = chart.config(); // retrieve default config
+			var svg = d3.select('body').append('svg')
+			  .attr('width', cfg.w + cfg.w + 50)
+			  .attr('height', cfg.h + cfg.h / 4);
+			svg.append('g').classed('single', 1).datum(data).call(chart);
+			</script>
+		</div>
+		<div>
+			<img src="http://www.connectionsacademy.com/Libraries/blog/multiple-intelligences-learning-styles.jpg" style="width:500px;height:500px;">
+		</div>
+      </section>
+      <footer>
+        <p></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    <script src="javascripts/trip.js"></script>
+  </body>
+</html>
+
+
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
-<link rel="stylesheet" href="https://rawgit.com/tpreusse/radar-chart-d3/master/src/radar-chart.css">
-<style>
-body {
-  padding: 20px;
-}
-</style>
 
-<style>
-.radar-chart .area {
-  fill-opacity: 0.7;
-}
-.radar-chart.focus .area {
-  fill-opacity: 0.3;
-}
-.radar-chart.focus .area.focused {
-  fill-opacity: 0.9;
-}
-.area.multint, .multint .circle {
-  fill: #009900;
-  stroke: none;
-}
-</style>
-
-<script src="http://d3js.org/d3.v3.js"></script>
-<script src="https://rawgit.com/tpreusse/radar-chart-d3/master/src/radar-chart.js"></script>
-
-<script>
-RadarChart.defaultConfig.color = function() {};
-RadarChart.defaultConfig.radius = 3;
-RadarChart.defaultConfig.w = 500;
-RadarChart.defaultConfig.h = 500;
-
-var data = [
-  {
-    className: 'multint', // optional can be used for styling
-    axes: [
-      {axis: "strength", value: 13}, 
-      {axis: "intelligence", value: 6}, 
-      {axis: "charisma", value: 5},  
-      {axis: "dexterity", value: 9},  
-      {axis: "luck", value: 2}
-    ]
-  }
-];
-</script>
 </head>
 
 <body>
-<div>
-<script>
-var chart = RadarChart.chart();
-var cfg = chart.config(); // retrieve default config
-var svg = d3.select('body').append('svg')
-  .attr('width', cfg.w + cfg.w + 50)
-  .attr('height', cfg.h + cfg.h / 4);
-svg.append('g').classed('single', 1).datum(data).call(chart);
-</script>
-</div>
-<div>
-<img src="http://www.connectionsacademy.com/Libraries/blog/multiple-intelligences-learning-styles.jpg" style="width:500px;height:500px;">
-</div>
+
 </body>
 </html>
