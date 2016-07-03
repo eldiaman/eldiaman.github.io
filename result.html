@@ -30,25 +30,12 @@
 
 	<script src="http://d3js.org/d3.v3.js"></script>
 	<script src="https://rawgit.com/tpreusse/radar-chart-d3/master/src/radar-chart.js"></script>
-
+	<script src="javascripts/func.js"></script>
 	<script>
 	RadarChart.defaultConfig.color = function() {};
 	RadarChart.defaultConfig.radius = 3;
 	RadarChart.defaultConfig.w = 500;
 	RadarChart.defaultConfig.h = 500;
-
-	var data = [
-	  {
-		className: 'multint', // optional can be used for styling
-		axes: [
-		  {axis: "strength", value: 13}, 
-		  {axis: "intelligence", value: 6}, 
-		  {axis: "charisma", value: 5},  
-		  {axis: "dexterity", value: 9},  
-		  {axis: "luck", value: 2}
-		]
-	  }
-	];
 	</script>
     <title>Tsuki No Me by eldiaman</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
@@ -84,12 +71,35 @@
     <script src="javascripts/scale.fix.js"></script>
     <script src="javascripts/trip.js"></script>
 	<script>
-	var chart = RadarChart.chart();
-	var cfg = chart.config(); // retrieve default config
-	var svg = d3.select('#res').append('svg')
-	  .attr('width', cfg.w + cfg.w + 50)
-	  .attr('height', cfg.h + cfg.h / 4);
-	svg.append('g').classed('single', 1).datum(data).call(chart);
+	result = getCookie("result");
+	if (result != "") {
+		values = result.split(" ");
+		var data = [
+		  {
+			className: 'multint', // optional can be used for styling
+			axes: [
+			  {axis: "Verbal-Linguistic", value: parseInt(values[0])}, 
+			  {axis: "Logicomathematic", value: parseInt(values[1])}, 
+			  {axis: "Bodily-Kinesthetic", value: parseInt(values[2])},  
+			  {axis: "Naturalistic", value: parseInt(values[3])},  
+			  {axis: "Visual-Spatial", value: parseInt(values[4])},
+			  {axis: "Musical", value: parseInt(values[5])},
+			  {axis: "Interpersonal", value: parseInt(values[6])},
+			  {axis: "Intrapersonal", value: parseInt(values[7])}
+			]
+		  }
+		];
+		var chart = RadarChart.chart();
+		var cfg = chart.config(); // retrieve default config
+		var svg = d3.select('#res').append('svg')
+		  .attr('width', cfg.w + cfg.w + 50)
+		  .attr('height', cfg.h + cfg.h / 4);
+		svg.append('g').classed('single', 1).datum(data).call(chart);
+	}
+	else {
+		str = "<h2> Please run the game first to collect results! <br> <a href='http://eldiaman.github.io/project/'>Amaz(e)ing Brain</a>  </h2>";
+		document.getElementById("res").innerHTML = str;
+	}
 	</script>
   </body>
 </html>
