@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html
+<html>
+<head>
 <meta charset="utf-8">
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
 <link rel="stylesheet" href="https://rawgit.com/tpreusse/radar-chart-d3/master/src/radar-chart.css">
-
-<head>
 <style>
 body {
   padding: 20px;
@@ -35,13 +34,7 @@ RadarChart.defaultConfig.color = function() {};
 RadarChart.defaultConfig.radius = 3;
 RadarChart.defaultConfig.w = 500;
 RadarChart.defaultConfig.h = 500;
-</script>
 
-</head>
-
-<span></span>
-
-<script>
 var data = [
   {
     className: 'multint', // optional can be used for styling
@@ -54,18 +47,11 @@ var data = [
     ]
   }
 ];
-function randomDataset() {
-  return data.map(function(d) {
-    return {
-      className: d.className,
-      axes: d.axes.map(function(axis) {
-        return {axis: axis.axis, value: Math.ceil(Math.random() * 10)};
-      })
-    };
-  });
-}
 </script>
+</head>
 
+<body>
+<div>
 <script>
 var chart = RadarChart.chart();
 var cfg = chart.config(); // retrieve default config
@@ -73,9 +59,10 @@ var svg = d3.select('body').append('svg')
   .attr('width', cfg.w + cfg.w + 50)
   .attr('height', cfg.h + cfg.h / 4);
 svg.append('g').classed('single', 1).datum(data).call(chart);
-
 </script>
-
+</div>
+<div>
 <img src="http://www.connectionsacademy.com/Libraries/blog/multiple-intelligences-learning-styles.jpg" style="width:500px;height:500px;">
-
+</div>
+</body>
 </html>
