@@ -20,7 +20,7 @@
 		return "";
 	}
 
-	function setResults(lin, log, kin, nat, vis, mus, inter, intra, name) {
+	function sendResults(lin, log, kin, nat, vis, mus, inter, intra, name) {
 		s = lin + " " + log + " " + kin + " " + nat + " " + vis + " " + mus + " " + inter + " " + intra + " " + name;
 		setCookie("result", s, 1);
 		window.location.replace('http://eldiaman.github.io/project/result.html');
