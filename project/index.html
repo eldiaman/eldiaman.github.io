@@ -41,6 +41,21 @@
 	
 	<link href="animate.css" rel="stylesheet" type="text/css" />
 	<link href="hmmg_layoutTransition.css" rel="stylesheet" type="text/css" />
+	<script>
+	s = "";
+	function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + "; " + expires;
+	}
+	function sendResults(lin, log, kin, nat, vis, mus, inter, intra, name) {
+		s = lin + " " + log + " " + kin + " " + nat + " " + vis + " " + mus + " " + inter + " " + intra + " " name;
+		setCookie("result", s, 1);
+		window.location.replace('http://eldiaman.github.io/project/result.html');
+		return s;
+	}
+	</script>
 
 </head> 
  
