@@ -6,4 +6,6 @@
 
 2. a whole security section
 
+3. write my theoretical super university curriculum
+
 tbc
