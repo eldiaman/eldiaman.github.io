@@ -5,8 +5,7 @@ Winter semester is: 1 September to 15 January
 Study week: Free week to study 16-22 Jan
 Exam weeks: 23 Jan - 8 Feb
 Exam rest:  8 Feb - 11 Feb
-
-Winter semester is: 12 Feb to 15 June
+Summer semester is: 12 Feb to 15 June
 Study week: Free week to study 16-22 June
 Exam weeks: 23 June - 8 July
 Summer vacation: 8 July - 15 Aug
