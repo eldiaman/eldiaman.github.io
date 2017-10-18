@@ -20,7 +20,7 @@ TODO: Needs some more thought
   - Boolean logic
   - Bits/Bytes conversions etc
   - Brief History: where we were, where we are now
-    + This is also important. I would like the student to get a grasp of the scale.
+      + This is also important. I would like the student to get a grasp of the scale.
   - Super important: What fields exist in computer science. A computer scientist must know before hand and at least have an idea 
     on what field they can follow during their studies and what studying in this field means. 
       + Networks
