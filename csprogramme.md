@@ -1,6 +1,7 @@
 
-TODO: Needs some more thought
+Year overview
 --------------------------------------------------
+TODO: Needs some more thought
 - Winter semester is: 1 September to 15 January
   + Study week: Free week to study 16-22 Jan
   + Exam weeks: 23 Jan - 8 Feb
@@ -10,13 +11,11 @@ TODO: Needs some more thought
   + Exam weeks: 23 June - 8 July
   + Summer vacation: 8 July - 15 Aug
 - Optional Re-exam week: 16 Aug - 1 September 
----------------------------------------------------
 
 1 Winter Semester
 -----------------
 
  1. Introduction to Computer Science: TODO: is this too much/too little?
-  - Basic algorithms using pseudocode
   - Boolean logic
   - Bits/Bytes conversions etc
   - Brief History: where we were, where we are now
@@ -32,3 +31,12 @@ TODO: Needs some more thought
       + Web / Mobile Development
       + Extreme Computing / Distributed Systems
       + Video games / Graphics
+
+  2. Programming I
+    - This will be the first programming course of the students using the python language. TODO: decide python2.7 or python3
+    - foundations of programming: variable naming, operators, syntax etc
+    - foundations of structured programming: if/elif/else, while/for/do, functions
+    - python basics: lists, directories, tuples
+    - more python: 
+   
+  3. 
