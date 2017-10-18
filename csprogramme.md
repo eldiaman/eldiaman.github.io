@@ -16,7 +16,7 @@ Optional Re-exam week: 16 Aug - 1 September
 1 Winter Semester
 -----------------
 
-# 1 Introduction to Computer Science:
+ 1 Introduction to Computer Science:
   - Basic algorithms using pseudocode
   - Boolean logic
   - Bits/Bytes conversions etc
