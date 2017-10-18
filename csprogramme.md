@@ -34,19 +34,19 @@ TODO: Needs some more thought
       + Video games / Graphics
 
   2. Programming Foundations
-    - This will be the first programming course of the students using the python language. TODO: decide python2.7 or python3
-    - foundations of programming: variable naming, operators, syntax etc
-    - foundations of structured programming: if/elif/else, while/for/do, functions
-    - python basics: lists, directories, tuples
-    - more python:
-    - compiled vs interpreted/scripts vs vm'ed languages: give examples of each and compare with python now that they can program a       bit. Almost every student will have heard of more languages. Let them understand why different languages exist and what their           differences are. Obviously not in depth. The first semester is about broadening the views of the students. 
+   - This will be the first programming course of the students using the python language. TODO: decide python2.7 or python3
+   - foundations of programming: variable naming, operators, syntax etc
+   - foundations of structured programming: if/elif/else, while/for/do, functions
+   - python basics: lists, directories, tuples
+   - more python:
+   - compiled vs interpreted/scripts vs vm'ed languages: give examples of each and compare with python now that they can program a       bit. Almost every student will have heard of more languages. Let them understand why different languages exist and what their           differences are. Obviously not in depth. The first semester is about broadening the views of the students. 
    
-  3. Introduction to Algorithms & Data structures
-    - Start with some simple algorithms and their brute force solutions
-    - THEN learn about complexity
-    - then revisit and lower complexity
-    - basic algorithmic thinking must be developed in this course
-    - TODO: some more thought needed
+ 3. Introduction to Algorithms & Data structures
+   - Start with some simple algorithms and their brute force solutions
+   - THEN learn about complexity
+   - then revisit and lower complexity
+   - basic algorithmic thinking must be developed in this course
+   - TODO: some more thought needed
   
   
   
