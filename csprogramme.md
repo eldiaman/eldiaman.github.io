@@ -15,7 +15,7 @@ TODO: Needs some more thought
 1 Winter Semester
 -----------------
 
- 1 Introduction to Computer Science:
+ 1. Introduction to Computer Science: TODO: is this too much/too little?
   - Basic algorithms using pseudocode
   - Boolean logic
   - Bits/Bytes conversions etc
